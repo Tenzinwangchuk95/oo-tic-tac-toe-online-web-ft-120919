@@ -52,7 +52,7 @@ class TicTacToe
   
   def turn
     puts "Pick a position 1-9"
-    input = gets.strip
+    input = gets.strip.to_i
     if input == "exit"
       over?("exit")
     end
