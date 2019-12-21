@@ -52,7 +52,8 @@ class TicTacToe
   
   def turn
     puts "Pick a position 1-9"
-    input = gets.strip.to_i
+    input = gets.strip
+    
     if valid_move?(input)
       move(input_to_index(input), current_player)
       display_board
