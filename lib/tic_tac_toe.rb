@@ -89,6 +89,7 @@ class TicTacToe
         puts "Cat's Game!"
       end
       if won?
+        winner
         puts "Congratulations #{@winner}!"
       end
     end
