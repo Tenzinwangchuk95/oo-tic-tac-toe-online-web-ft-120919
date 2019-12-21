@@ -147,22 +147,22 @@ def turn(board)
     turn(board)
   end
 end
-def turn_count(board)
-  counter = 0
-  board.each do |pos|
-      if pos == "X" || pos == "O"
-        counter += 1
-      end
+  def turn_count(board)
+    counter = 0
+    board.each do |pos|
+        if pos == "X" || pos == "O"
+          counter += 1
+        end
+    end
+    counter
   end
-  counter
-end
-def current_player(board)
-  if turn_count(board) % 2 == 0
-    return "X"
-  else
-    return "O"
+  def current_player(board)
+    if turn_count(board) % 2 == 0
+      return "X"
+    else
+      return "O"
+    end
   end
-end
 # Define your play method below
 =begin
 def play(board)
