@@ -50,16 +50,16 @@ class TicTacToe
     index.to_i.between?(0,8) && !position_taken?(index)
   end
   
-  # def turn
-  #   puts "Pick a position 1-9"
-  #   input = gets.strip.to_i
-  #   if valid_move?(input)
-  #     move(input_to_index(input), current_player)
-  #     display_board
-  #   else
-  #     input = gets("1")
-  #   end
-  # end
+  def turn
+    puts "Pick a position 1-9"
+    input = gets.strip.to_i
+    if valid_move?(input)
+      move(input_to_index(input), current_player)
+      display_board
+    else
+      input = gets("1")
+    end
+  end
   
   def turn
     puts "It's #{current_player}'s turn."
