@@ -57,7 +57,7 @@ class TicTacToe
       move(input_to_index(input), current_player)
       display_board
     else
-      input = gets.strip.to_i
+      input = gets("1")
     end
   end
   
